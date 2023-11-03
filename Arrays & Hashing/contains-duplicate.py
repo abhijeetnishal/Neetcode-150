@@ -14,6 +14,7 @@ Constraints:
 -109 <= nums[i] <= 109
 '''
 
+# Brute force
 # TC: O(n*n)
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
@@ -26,6 +27,7 @@ class Solution:
 
         return False    
 
+# Using sorting
 # TC: O(n*log(n))
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
@@ -39,9 +41,9 @@ class Solution:
 
         return False 
 
+# Using Dictionary(hashmap)
 # TC: O(n) SC: O(n)
 class Solution:
-    # Using Dictionary(hashmap)
     def containsDuplicate(self, nums: List[int]) -> bool:
         arrLen = len(nums)
 
@@ -55,7 +57,9 @@ class Solution:
 
         return False 
 
-    # Using set
+# Using set
+# TC: O(n) SC: O(n)
+class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         arrLen = len(nums)
 
